@@ -6,12 +6,12 @@
 ::after,
 ::before {
   box-sizing: border-box;
-  // @include outline(1)
+  // @include visible-bound
 }
 
 html {
   height: 100%;
-  background-image: url("../assets/cell-96-160.svg");
+  // background-image: url("../assets/cell-96-160.svg");
 }
 
 body {
@@ -20,13 +20,18 @@ body {
   margin: 0;
   font-family: "TTLakes", sans-serif;
   color: var(--color-text);
-  background-image: url("../assets/cell-body.svg");
+  // background-image: url("../assets/cell-body.svg");
 }
 
 a {
   color: inherit;
   text-decoration: none;
   outline-offset: -1px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .reset-list {
