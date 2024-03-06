@@ -1,4 +1,46 @@
-@mixin outline ($th: 1, $color: dodgerblue) {
+// X-Small  None  <576px
+@mixin media-X-Small-max-width() {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+// Small  ≥576px
+@mixin media-Small-min-width() {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+// Medium  ≥768px
+@mixin media-Medium-min-width() {
+  @media (min-width: 784px) {
+    @content;
+  }
+}
+
+// Large  ≥992px
+@mixin media-Large-min-width() {
+  @media (min-width: 1120px) {
+    @content;
+  }
+}
+
+// Extra large  ≥1200px
+@mixin media-Extra-large-min-width() {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+// Extra extra large  ≥1400px
+@mixin media-Extra-extra-large-min-width() {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin visible-bound ($th: 1, $color: dodgerblue) {
   outline: #{$th}px solid #{$color};
   outline-offset: -#{$th}px;
 }
