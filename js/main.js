@@ -9,7 +9,7 @@ moreButton.addEventListener('click', () => {
       max-height: ${paragraph.scrollHeight}px;
     `
     moreButton.style.cssText = `
-      background-image: url("../../assets/svg/icon-arrow-up.svg");
+      background-image: url("assets/svg/icon-arrow-up.svg");
     `
   }
   else {
@@ -17,7 +17,7 @@ moreButton.addEventListener('click', () => {
     max-height: ${initialHeight}px;
     `
     moreButton.style.cssText = `
-      background-image: url("../../assets/svg/icon-arrow-down.svg");
+      background-image: url("assets/svg/icon-arrow-down.svg");
     `
   }
 
